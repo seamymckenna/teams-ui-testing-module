@@ -1,0 +1,27 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "A module to test parameter inputs from the teams ui console.",
+  "input_method": "environment",
+  "parameters": {
+    "no_default_required": {
+      "description": "A required string parameter with no specified default value",
+      "type": "String"
+    },
+    "default_required": {
+      "description": "A required string parameter",
+      "type": "String",
+      "default": "default_required"
+    },
+    "no_default_optional": {
+      "description": "An optional string parameter with no specified default value",
+      "type": "Optional[String]"
+    },
+    "default_optional": {
+      "description": "An optional string parameter with a specified default value",
+      "type": "Optional[String]",
+      "default": "default_optional"
+    }
+  }
+}
+

@@ -1,0 +1,13 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "A task that prints messages and sleeps for a user defined time",
+  "input_method": "environment",
+  "parameters": {
+    "wait_for_seconds": {
+      "description": "How many seconds to sleep for",
+      "type": "Integer"
+    }
+  }
+}
+

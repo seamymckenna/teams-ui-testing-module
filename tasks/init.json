@@ -1,0 +1,53 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "A module to test parameter inputs from the teams ui console.",
+  "input_method": "environment",
+  "parameters": {
+    "string": {
+      "description": "A required string parameter",
+      "type": "String"
+    },
+    "boolean": {
+      "description": "A required boolean",
+      "type": "Boolean"
+    },
+    "non_empty_string": {
+      "description": "A string parameter that can't be empty",
+      "type": "Optional[String[1]]"
+    },
+    "optional_boolean": {
+      "description": "An optional boolean",
+      "type": "Optional[Boolean]"
+    },
+    "enum": {
+      "description": "An enum with different options",
+      "type": "Optional[Enum[option1, option2, option3, option4]]"
+    },
+    "integer": {
+      "description": "An integer parameter",
+      "type": "Optional[Integer]"
+    },
+    "array": {
+      "description": "An array of strings",
+      "type": "Optional[Array[String]]"
+    },
+    "pattern": {
+      "description": "Must be a capitalised word e.g. Test",
+      "type": "Optional[Pattern[/^[A-Z][a-z]*$/]]"
+    },
+    "variant": {
+      "description": "Input must be either an integer or a capitalised word e.g. 5 or \"Test\"",
+      "type": "Optional[Variant[Pattern[/^[A-Z][a-z]*$/],Integer]]"
+    },
+    "hash": {
+      "description": "A json object",
+      "type": "Optional[Hash]"
+    },
+    "integer_array": {
+      "description": "An array of integers",
+      "type": "Optional[Array[Integer]]"
+    }
+  }
+}
+

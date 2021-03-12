@@ -1,0 +1,6 @@
+---
+name: teams_ui_testing_module
+modules:
+- name: puppetlabs-exec
+- name: puppetlabs-facts
+- name: puppetlabs-package

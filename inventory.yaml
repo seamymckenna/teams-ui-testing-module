@@ -1,0 +1,27 @@
+# This is an example inventory.yaml
+# To read more about inventory files, see https://pup.pt/bolt-inventory
+#
+ groups:
+   - name: linux
+     targets:
+       - uri: seeming-obesity.delivery.puppetlabs.net
+     config:
+       transport: ssh
+       ssh:
+         private-key: /Users/seamusmckenna/id_rsa-acceptance
+   - name: windows
+     targets:
+       - name: win1
+         uri: target3.example.com
+       - name: win2
+         uri: target4.example.com
+     config:
+       transport: winrm
+ config:
+   ssh:
+     host-key-check: false
+     user: root
+   winrm:
+     user: Administrator
+     password: Bolt!
+     ssl: false
