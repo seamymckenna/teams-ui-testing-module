@@ -1,6 +1,5 @@
-# This is an example inventory.yaml
-# To read more about inventory files, see https://pup.pt/bolt-inventory
-#
+ facts:
+   operatingsystem: CentOS
  groups:
    - name: linux
      targets:
@@ -9,6 +8,8 @@
        transport: ssh
        ssh:
          private-key: /Users/seamusmckenna/id_rsa-acceptance
+     facts:
+      test: e2e
    - name: windows
      targets:
        - name: win1
