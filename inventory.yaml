@@ -1,28 +1,12 @@
- facts:
-   operatingsystem: CentOS
  groups:
    - name: linux
      targets:
-       - uri: seeming-obesity.delivery.puppetlabs.net
+       - uri: ssh
      config:
        transport: ssh
-       ssh:
-         private-key: /Users/seamusmckenna/id_rsa-acceptance
      facts:
       test: e2e
-   - name: windows
-     targets:
-       - name: win1
-         uri: target3.example.com
-       - name: win2
-         uri: target4.example.com
-     config:
-       transport: winrm
  config:
    ssh:
      host-key-check: false
      user: root
-   winrm:
-     user: Administrator
-     password: Bolt!
-     ssl: false
