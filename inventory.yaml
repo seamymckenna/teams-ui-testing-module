@@ -1,12 +1,17 @@
  groups:
    - name: linux
      targets:
-       - uri: ssh
+       - name: sshCiHost
+         uri: ssh
+       - name: pdlatest
+         uri: 10.234.2.1
      config:
        transport: ssh
+       ssh:
+         private-key: /Users/seamusmckenna/id_rsa-acceptance
      facts:
       test: e2e
  config:
    ssh:
      host-key-check: false
-     user: root
+     user: ubuntu
