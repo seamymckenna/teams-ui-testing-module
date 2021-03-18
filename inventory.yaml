@@ -5,13 +5,10 @@
          uri: ssh
        - name: pdlatest
          uri: 10.234.2.1
-     config:
-       transport: ssh
-       ssh:
-         private-key: /Users/seamusmckenna/id_rsa-acceptance
-     facts:
-      test: e2e
+       - name: dig-ubuntu
+         uri: 10.234.1.245
  config:
    ssh:
      host-key-check: false
      user: ubuntu
+     password: Quality!
