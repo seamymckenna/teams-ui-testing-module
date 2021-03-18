@@ -10,5 +10,5 @@
  config:
    ssh:
      host-key-check: false
-     user: ubuntu
-     password: Quality!
+     user: dig
+     password: Qu@lity!
