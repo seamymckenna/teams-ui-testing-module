@@ -10,27 +10,3 @@ groups:
       - 
         name: ssh
         uri: ssh
-      - 
-        name: pdlatest
-        uri: "10.234.2.1"
-        config:
-          ssh:
-            user: ubuntu
-      - 
-        name: p9
-        uri: "10.234.1.245"
-        config:
-          ssh:
-            user: ubuntu
-      - 
-        name: pooler
-        uri: "amatory-bad.delivery.puppetlabs.net"
-      - 
-        name: bolty
-        uri: "10.234.3.180"
-        config: 
-          ssh: 
-            user: ubuntu
-            private-key:
-              key-data: "-----BEGIN OPENSSH PRIVATE KEY-----\n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\nY2FsAQ==\n-----END OPENSSH PRIVATE KEY-----\n"
-
