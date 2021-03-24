@@ -7,6 +7,10 @@ groups:
   - 
     name: linux
     targets: 
-      - 
+      -
         name: ssh
-        uri: ssh
+        uri: "10.234.1.245"
+        config: 
+          ssh: 
+            user: dig
+            password: Qu@lity!
