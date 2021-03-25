@@ -14,8 +14,8 @@
 # @param hash A json object. Defaults to {}.
 plan teams_ui_testing_module(
   TargetSpec $targets,
-  String $string = undef,
-  Boolean $boolean = undef,
+  String $string,
+  Boolean $boolean,
   Optional[String[1]] $non_empty_string = 'default_string',
   Optional[Boolean] $optional_boolean = true,
   Optional[Enum[option1, option2, option3, option4]] $enum = 'option1',
@@ -57,7 +57,6 @@ plan teams_ui_testing_module(
     hash => $hash,
     )
   out::message('Test output message')
-  upload_file('test.txt', 'tmp/test.txt', $targets, 'Uploaded a file', { _catch_errors => false, _run_as => 'root' })
 
   return 'Plan completed'
 }

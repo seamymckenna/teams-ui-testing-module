@@ -9,8 +9,8 @@
 plan teams_ui_testing_module::targets(
   TargetSpec $targets,
   TargetSpec $other_targets,
-  String $string = undef,
-  Boolean $boolean = undef,
+  String $string,
+  Boolean $boolean,
   Optional[Integer] $wait_for_seconds = 10,
   ) {
   # run our test task
